@@ -17,8 +17,20 @@ section{
     padding: 100px 0 110px 0;
 }
 
+.about{
+    background-color: white;
+}
+
+.medias{
+    background-color: white;
+}
+
 .agenda{
     background-color: #0f3b5b;
+}
+
+.agenda img{
+    width: 30%;
 }
 
 .press{
