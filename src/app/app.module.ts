@@ -24,6 +24,7 @@ import { MainMenuComponent } from './pageComponents/main-menu/main-menu.componen
 import { SideBarComponent } from './pageComponents/side-bar/side-bar.component';
 import { FooterComponent } from './pageComponents/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { HomeMainMenuComponent } from './pageComponents/home-main-menu/home-main-menu.component';
 
 const routes: Routes = 
 [
@@ -86,7 +87,8 @@ const routes: Routes =
     MainMenuComponent,
     SideBarComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    HomeMainMenuComponent
   ],
   imports: [
     BrowserModule,
