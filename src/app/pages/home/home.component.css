@@ -1,7 +1,82 @@
 .main-pic{
- /*    padding: 0 10% 0 25%;  */
+    /*    padding: 0 10% 0 25%;  */
 }
 
 img{
     width: 100%;
 }
+
+h1{
+    text-align: center;
+    color: #aa7939;
+    font-size: 3em;
+}
+
+section{
+    padding: 10px 0 10px 0;
+}
+
+.agenda{
+    background-color: #0f3b5b;
+}
+
+.press{
+    background-color: #0f3b5b;   
+}
+
+.about p{
+    text-align: center;
+    font-size: 2em;
+}
+
+body,html{
+	height: 100%;
+}
+
+.container {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+}
+
+.rounded{
+    border-radius:50px;
+}
+
+.rounded.text-green{
+    color:#00F0B5;
+    mix-blend-mode: difference;
+}
+.rounded.text-green::before{
+    border-radius: 50px;
+    width: 25%;
+    background: #00F0B5;
+}
+.rounded.text-green:hover::before{
+    background: #00F0B5;
+    width: 100%;
+}
+
+.btn{
+	margin: 20px auto;
+	border: none;
+	padding: 10px 44px;
+	font-size: 36px;
+    position: relative;
+}
+
+.btn::before{
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+

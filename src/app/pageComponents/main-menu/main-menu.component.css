@@ -23,7 +23,8 @@
 }
 
 .header_wrapper li a:hover {
-    background-color: #111;
+    color: #aa7939;
+    transition: 0.5s;
 }
 
 .image img{
@@ -83,7 +84,7 @@
     }
     
     .image img{
-        height: 106px;
+        height: 95px;
         padding-bottom: 40px;
     }
     

@@ -3,6 +3,6 @@ body{
     font-family: 'Muli', sans-serif;
 }
 
-.home-page-template{
-    background-color: #0f3b5b
+.home-page-template p{
+    padding: 0 20% 0 20%;
 }
