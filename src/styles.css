@@ -10,3 +10,49 @@ body{
 .home-page-template p{
     padding: 0 20% 0 20%;
 }
+
+/* ANIMATIONS */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes
+homeheaderbackgroundimage{
+    0%{
+        transform:translateX(-20%);
+        visibility:hidden
+    }
+    50%{
+        visibility:visible
+    }
+    100%{
+        transform:translateX(0);
+        visibility:visible
+    }
+}
+
+@keyframes homeheaderbackgroundmask{
+    0%{
+        transform:translateX(-100%)
+    }
+    100%{
+        transform:translateX(100%)
+    }
+}

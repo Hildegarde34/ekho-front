@@ -1,3 +1,7 @@
+*{
+        box-sizing: inherit;
+}
+
 .page-color{
     background-color: #09283f;
     min-height: 100vh;
@@ -15,12 +19,37 @@
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
     background-color: white;
-    color: #0f3b5b;
+    color: #09283f;
 }
 
 .portrait{
-    padding: 0 15% 0 28%;
+    margin: 0 5% 0 35%;
     float: inherit;
+    visibility: hidden;
+    animation: homeheaderbackgroundimage 1000ms ease forwards;
+    animation-delay: 1.4s;
+    transition: transform 600ms ease;
+    position: absolute;
+    overflow: hidden;
+}
+
+.portrait::before{
+    content: '';
+    background-color: #064579;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    animation: homeheaderbackgroundmask 2.5s ease forwards;
+    animation-delay: 1s;
+}
+
+.portrait::after{
+    content: '';
+    display: block;
+    position: absolute;
 }
 
 img{
@@ -32,34 +61,42 @@ span{
     color: white;
 }
 
-.name{
-    position: absolute;
-    width: 15%;
-    padding-left: 13%;
-    margin-top: 8%;
-}
-@keyframes fadeInLeft {
-    from {
-      opacity: 0;
-      transform: translate3d(-100%, 0, 0);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  .fadeInLeft {
-    animation-name: fadeInLeft;
-  }
-
 .cheffe{
-    position: absolute;
     font-size: 1.2em;
     margin-left: 15%;
+    opacity: 0;
+    -webkit-animation: fadeIn 3s ease 1s 1 normal forwards running;
+    animation: fadeIn 3s ease 2s 1 normal forwards running;
 }
 
 .caroline{
     font-family: 'Roboto Slab', serif;
+    opacity: 0;
+    -webkit-animation: fadeIn 3s ease 1.2s 1 normal forwards running;
+    animation: fadeIn 3s ease 2.3s 1 normal forwards running;
+}
+
+.semont{
+    font-family: 'Roboto Slab', serif;
+    opacity: 0;
+    -webkit-animation: fadeIn 3s ease 1.4s 1 normal forwards running;
+    animation: fadeIn 3s ease 2.6s 1 normal forwards running;
+}
+
+.name{
+    position: absolute;
+    width: 15%;
+    padding-left: 20%;
+    margin-top: 8%;
+}
+
+p{
+    text-align: justify;
+}
+
+.parag{
+    margin: 12% 0 8% 0;
+    padding: 0 10% 0 24%;
+    font-size: 1.5em;
+    color: #87959f;
 }
